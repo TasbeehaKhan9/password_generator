@@ -1,0 +1,48 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    background-color:#36247A;
+}
+
+.pass-div{
+
+    background-color:#4A3D83 ;
+    opacity: 0.5;
+    min-height: 400px;
+    width: 90%;
+    max-width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 100px;
+  border: 2px solid rgba(285, 255, 255);
+  border-radius: 20px;
+
+   
+}
+
+
+h1{
+        
+       
+        text-align: center;
+        color: white;
+
+      
+}
+span{
+    color:rgb(212, 161, 21);
+    text-decoration: underline;
+}
+
+
+
+
+@media  (    max-width: 480px){
+
+    .pass-div{
+        
+    }
+}
