@@ -1,79 +1,195 @@
-body{
-    margin: 0%;
-    padding: 0%;
+body {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    background-color:#36247A;
+    background-color: #36247A;
+    font-family: Arial, sans-serif;
 }
 
-.pass-div{
-
-    background-color:#4A3D83 ;
-    min-height: 400px;
-    width: 90%;
+.main-container {
     max-width: 700px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin: auto;
-    margin-top: 100px;
-  border: 2px solid rgba(285, 255, 255);
-  border-radius: 20px;
-  box-shadow: 2px 3px black;
-  z-index: 1;
-
-   
+    padding: 20px;
+    text-align: center;
 }
 
-
-h1{
-        
-       
-        text-align: center;
-        color: white;
-        padding-top: 50px;
-
-      
+h1 {
+    text-align: center;
+    color: white;
+    padding-top: 50px;
 }
-span{
-    color:rgb(212, 161, 21);
+
+span {
+    color: rgb(212, 161, 21);
     text-decoration: underline;
 }
 
-
-h2{
+h2 {
     display: none;
 }
 
-.custom-head{
-    padding-bottom: 40%;
-    color: rgb(255, 255, 255);
-    z-index: 10;
-    padding-right: 50%;
-    font-size: x-large;
+/* Password Box */
+.pass-div {
+    background-color: #4A3D83;
+    min-height: 250px;
+    width: 100%;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.custom-head {
+    color: #fff;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+.input-section {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.input-generate {
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    flex: 1;
+}
+
+.fa-solid {
+    color: rgb(90, 90, 90);
+    margin-left: 10px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.fa-solid:hover {
+    color: #36247A;
+}
+
+
+.check-elements {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.length-pass {
+    color: #fff;
+    text-align: start;
+    margin-right: 120px;
 }
 
 
 
+.slider-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
 
+label {
+    font-weight: bold;
+}
+
+input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    font-size: 1rem;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.check-elements {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* thoda space add ho jayega */
+    color: #fff;
+    font-size: 1rem;
+    position: relative;
+    right: 90px;
+}
+
+.check-elements label {
+    display: flex;
+    align-items: center;
+    /* text aur checkbox vertically center ho jayenge */
+    gap: 8px;
+    /* checkbox aur text ke beech spacing */
+    cursor: pointer;
+}
+
+.check-elements input[type="checkbox"] {
+    accent-color: #3c3070a6;
+    /* custom color for checkbox */
+    width: 18px;
+    height: 18px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: rgb(166, 11, 255);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: red;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.rotate-button {
+    border: none;
+    background-color: #ffffff;
+}
+
+.copy-btn {
+    border: none;
+    background-color: white;
+    position: relative;
+    left: 4%;
+}
 
 
 
 /* ______________________________For Mobile Screen___________________________ */
 
-@media  (    max-width: 480px){
+@media (max-width: 480px) {
 
-    .pass-div{
-       padding-bottom:50px ;
+    .pass-div {
+        padding-bottom: 50px;
     }
-h1{
-display: none;
-}
-h2{
-    display: block;
-    padding-top: 50px;
-    text-align: center;
-    color: white;
-    font-size:xx-large;
-}
-    
+
+    h1 {
+        display: none;
+    }
+
+    h2 {
+        display: block;
+        padding-top: 50px;
+        text-align: center;
+        color: white;
+        font-size: xx-large;
+    }
+
 }
